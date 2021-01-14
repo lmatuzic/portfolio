@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar'
+import './stylesheets/Application.scss'
 
 function App() {
   return (

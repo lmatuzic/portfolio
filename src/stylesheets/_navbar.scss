@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: blanchedalmond;
+  padding: 1.5em;
+
+  ul {
+    display: flex;
+
+    li {
+      list-style: none;
+      padding-right: 1.75em;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
