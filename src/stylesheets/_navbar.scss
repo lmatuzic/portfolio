@@ -1,4 +1,4 @@
-nav {
+.navbar {
   display: flex;
   justify-content: flex-end;
   background-color: blanchedalmond;
@@ -13,6 +13,11 @@ nav {
 
       &:last-child {
         padding-right: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: $black;
       }
     }
   }
