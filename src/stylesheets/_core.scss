@@ -6,11 +6,23 @@
   font-family: 'Nunito', sans-serif;
 }
 
+body {
+  background-color: $dark-gray;
+  color: $gray;
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $white;
+  font-weight: 600;
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 3rem;
 
   @media (min-width: 1200px) {
     width: 1170px;
