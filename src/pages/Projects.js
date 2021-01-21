@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-
 import Project from '../components/Project'
 
 const Projects = () => {
@@ -19,7 +18,6 @@ const Projects = () => {
         Projects
       </motion.h2>
 
-      <Project />
       <Project />
     </div>
   )

@@ -1,9 +1,10 @@
 [
   {
-    "name": "Asset Manager",
-    "description": "Internal web application for managing company assets ",
+    "name": "Hespo",
+    "description": "Web shop (mattresses, beds, bedrooms, pillows, floorings, etc…)",
     "role": "Frontend web development",
     "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
+    "link": "https://hespo.hr/",
     "id": 1
   },
   {
@@ -11,6 +12,7 @@
     "description": "Web application for storing, sharing and sorting art",
     "role": "Frontend web development",
     "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
+    "link": "https://komyoon.com/",
     "id": 2
   },
   {
@@ -18,14 +20,44 @@
     "description": "Web application for selling BIM blueprints",
     "role": "Frontend web development",
     "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
+    "link": "https://archibrix.com/",
     "id": 3
   },
   {
     "name": "Pink Bibs",
     "description": "Web application for valet parking and keeping your car secure in South Africa",
     "role": "Full stack web development",
-    "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
+    "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails, PostgreSQL",
+    "link": "https://www.pinkbibs.co/",
     "id": 4
+  },
+  {
+    "name": "Heptashop",
+    "description": "Web shop for selling USB Disks as backup",
+    "role": "Frontend web development",
+    "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
+    "id": 5
+  },
+  {
+    "name": "Tranceframing",
+    "description": "Web application for selling life coaching materials",
+    "role": "Frontend web development",
+    "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
+    "id": 6
+  },
+  {
+    "name": "Asset Manager",
+    "description": "Internal web application for managing company assets ",
+    "role": "Frontend web development",
+    "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
+    "id": 7
+  },
+  {
+    "name": "Beap",
+    "description": "Beap company official website",
+    "role": "Full stack web development",
+    "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails, PostgreSQL",
+    "id": 8
   }
 ]
 
