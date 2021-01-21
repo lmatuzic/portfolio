@@ -5,6 +5,6 @@ Personal portfolio website
 ```zsh
 git git@github.com:lmatuzic/portfolio.git
 cd portfolio
-npm install # installs packages and dependencies
+npm install # install packages and dependencies if needed
 npm start # start server
 ```
