@@ -26,10 +26,7 @@ function Project() {
               <div className="project__description">{project.description}</div>
               <div className="project__role">{project.role}</div>
               <div className="project__technologies">{project.technologies}</div>
-              <FontAwesomeIcon 
-                className="icon icon-right" 
-                icon={faLongArrowAltRight} 
-              />
+              {project.link.length === 0 ? '' : <FontAwesomeIcon className="icon icon-right" icon={faLongArrowAltRight} /> }
             </div>
           ) 
         })

@@ -8,19 +8,19 @@
     "id": 1
   },
   {
-    "name": "Komyoon",
-    "description": "Web application for storing, sharing and sorting art",
-    "role": "Frontend web development",
-    "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
-    "link": "https://komyoon.com/",
-    "id": 2
-  },
-  {
     "name": "Archibrix",
     "description": "Web application for selling BIM blueprints",
     "role": "Frontend web development",
     "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
     "link": "https://archibrix.com/",
+    "id": 2
+  },
+  {
+    "name": "Tranceframing",
+    "description": "Web application for selling life coaching materials",
+    "role": "Frontend web development",
+    "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
+    "link": "https://tranceframing.com/",
     "id": 3
   },
   {
@@ -40,11 +40,11 @@
     "id": 5
   },
   {
-    "name": "Tranceframing",
-    "description": "Web application for selling life coaching materials",
+    "name": "Komyoon",
+    "description": "Web application for storing, sharing and sorting art",
     "role": "Frontend web development",
     "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
-    "link": "https://tranceframing.com/",
+    "link": "https://komyoon.com/",
     "id": 6
   },
   {
