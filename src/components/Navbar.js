@@ -15,11 +15,15 @@ function Navbar() {
       <div className="right">
         <ul>
           <li>
-            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="/about">About</NavLink>
           </li>
 
           <li>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/education">Education</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/projects">Projects</NavLink>
           </li>
 
           <li>
