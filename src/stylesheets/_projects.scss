@@ -1,8 +1,12 @@
 .projects {
-  h2 {
-    margin-bottom: 2rem;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
 
+  @media only screen and (max-width: 992px) {
+    grid-template-columns: 1fr;
+  }
+  
   .project {
     border: 1px solid $black;
     background-color: $black;

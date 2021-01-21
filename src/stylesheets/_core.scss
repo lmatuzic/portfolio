@@ -8,12 +8,13 @@
 
 body {
   background-color: $dark-gray;
-  color: $light-gray;
+  color: $gray;
 }
 
 h1, h2, h3, h4, h5 {
   color: $white;
   font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 .container {
@@ -23,16 +24,12 @@ h1, h2, h3, h4, h5 {
   margin-left: auto;
   margin-top: 3rem;
 
-  @media (min-width: 1200px) {
+  @media only screen and (min-width: 1200px) {
     width: 1170px;
   }
 
-  @media (min-width: 992px) {
-    width: 970px;
-  }
-
-  @media (min-width: 768px) {
-    width: 750px;
+  @media only screen and (max-width: 992px) {
+    width: auto;
   }
 }
 

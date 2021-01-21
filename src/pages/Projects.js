@@ -9,16 +9,18 @@ const Projects = () => {
   }
 
   return (
-    <div className="container projects">
+    <div className="container">
       <motion.h2 
-        variants={ titleAnimation }
-        initial="hidden"
-        animate="show"
-      >
+          variants={ titleAnimation }
+          initial="hidden"
+          animate="show"
+        >
         Projects
       </motion.h2>
 
-      <Project />
+      <div className="projects">
+        <Project />
+      </div>
     </div>
   )
 }
