@@ -1,5 +1,7 @@
 import React from 'react'
 import projects from '../projectData.json'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 
 function Project() {
   const openInNewTab = (url) => {
@@ -24,6 +26,10 @@ function Project() {
               <div className="project__description">{project.description}</div>
               <div className="project__role">{project.role}</div>
               <div className="project__technologies">{project.technologies}</div>
+              <FontAwesomeIcon 
+                className="icon icon-right" 
+                icon={faLongArrowAltRight} 
+              />
             </div>
           ) 
         })
