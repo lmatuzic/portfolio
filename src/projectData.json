@@ -36,6 +36,7 @@
     "description": "Web shop for selling USB Disks as backup",
     "role": "Frontend web development",
     "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
+    "link": "https://heptabackup.com/",
     "id": 5
   },
   {
@@ -43,6 +44,7 @@
     "description": "Web application for selling life coaching materials",
     "role": "Frontend web development",
     "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
+    "link": "https://tranceframing.com/",
     "id": 6
   },
   {
@@ -50,6 +52,7 @@
     "description": "Internal web application for managing company assets ",
     "role": "Frontend web development",
     "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails",
+    "link": "",
     "id": 7
   },
   {
@@ -57,6 +60,7 @@
     "description": "Beap company official website",
     "role": "Full stack web development",
     "technologies": "HTML, CSS, SCSS, Javascript, Ruby on Rails, PostgreSQL",
+    "link": "",
     "id": 8
   }
 ]

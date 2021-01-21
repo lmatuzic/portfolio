@@ -14,7 +14,12 @@ function Project() {
       {
         projects.map((project) => { 
           return (
-            <div key={project.id} className="project" id={project.id} onClick={() => openInNewTab(project.link)}>
+            <div 
+              key={project.id} 
+              className="project" 
+              id={project.id} 
+              onClick={(e) => project.link.length === 0 ? e.preventDefault() : openInNewTab(project.link)}
+            >
               <h4 className="project__name">{project.name}</h4>
               <div className="project__description">{project.description}</div>
               <div className="project__role">{project.role}</div>
