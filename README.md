@@ -1,4 +1,4 @@
-###Local setup
+## Local setup
 
 ```zsh
 npm install
