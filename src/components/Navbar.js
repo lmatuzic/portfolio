@@ -7,7 +7,7 @@ function Navbar() {
       <div className="left">
         <ul>
           <li>
-            Luka Matuzić
+            <NavLink to="/">Luka Matuzić</NavLink>
           </li>
         </ul>
       </div>
