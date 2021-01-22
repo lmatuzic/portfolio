@@ -3,17 +3,23 @@
   justify-content: flex-end;
   align-items: center;
   background-color: $black;
-  padding: 1.5em 5em;
-  border-bottom: 1px solid rgba(255, 255, 255, .06);
+  padding: 1.5em 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  font-weight: 600;
 
-  @media only screen and (max-width: 1200px) {
-    padding: 1.5em 1em;
+  @media only screen and (max-width: 576px) {
+    padding: 1em 0;
   }
 
 
   ul {
     display: flex;
     align-items: center;
+    margin-right: 3rem;
 
     li {
       list-style: none;
@@ -42,7 +48,7 @@
       }
     }
 
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 576px) {
       display: none;
     }
   }

@@ -1,9 +1,10 @@
 .navbar__toggle {
   display: none;
-  background-color: $black;
+  background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
+  margin-right: 2rem;
 
   span {
     display: block;
@@ -23,7 +24,7 @@
     }
   }
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 576px) {
     display: block;
   }
 }

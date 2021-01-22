@@ -1,0 +1,18 @@
+.mobile__nav {
+  position: fixed;
+  top: 63px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background-color: $gray;
+  color: $black;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+
+  &.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
