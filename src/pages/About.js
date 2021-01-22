@@ -3,16 +3,21 @@ import React from 'react'
 function About() {
   return (
     <div className="container about">
-      <h2>Personal</h2>
-      <p>
-        My name is Luka Matuzić and I am web developer who is passionate about developing efficient, scalable, responsive and beautiful web applications and websites. My journey into
-        web development evolved from a desire to make something completely on my own and while I'm at it - to make it look good. I have enjoyed doing web development for almost 2 years now. 
-        I use a variety of techonologies for my personal projects, but also for a company which I currently work in. I have a great desire to learn and discover new things, to meet new 
-        people and to solve the problems that are set before me.
-      </p>
+      <div className="personal">
+        <h2>Personal</h2>
 
-      <h2>Education</h2>
+        <p>
+          My name is Luka Matuzić and I am web developer who is passionate about developing efficient, scalable, responsive and beautiful web applications and websites. My journey into
+          web development evolved from a desire to make something completely on my own and while I'm at it - to make it look good. I have enjoyed doing web development for almost 2 years now. 
+          I use a variety of techonologies for my personal projects, but also for a company which I currently work in. I have a great desire to learn and discover new things, to meet new 
+          people and to solve the problems that are set before me.
+        </p>
+      </div>
+
+     
       <div className="education">
+        <h2>Education</h2>
+
         <div>
           <h3>High school</h3>
           <a href="http://ss-duga-resa.skole.hr/" target="_blank" rel="noopener noreferrer">Gymnasium Duga Resa, Croatia</a>
@@ -42,13 +47,15 @@ function About() {
         </div>
       </div>
 
-      <h2>Work</h2>
-      <a href="https://beap.co/" target="_blank" rel="noopener noreferrer">Beap labs</a>
-      <ul>
-        <li>
-          Sep 2019 - Present
-        </li>
-      </ul>
+      <div className="work">
+        <h2>Work</h2>
+        <a href="https://beap.co/" target="_blank" rel="noopener noreferrer">Beap labs</a>
+        <ul>
+          <li>
+            Sep 2019 - Present
+          </li>
+        </ul>
+      </div>
     </div>
   )
 }

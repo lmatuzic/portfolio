@@ -1,4 +1,6 @@
 .about {
+  margin-top: 3rem;
+
   h2 {
     margin-bottom: 1rem;
     position: relative;
@@ -24,7 +26,6 @@
 
   ul {
     margin-left: 2rem;
-    font-weight: 300;
     padding: 0.5rem;
 
     li {
@@ -36,8 +37,6 @@
     text-decoration: none;
     color: $blue;
     transition: color 0.15s ease-out;
-    font-weight: 300;
-
     &:hover {
       color: darken($color: $blue, $amount: 10%);
     }

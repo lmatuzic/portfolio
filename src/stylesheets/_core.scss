@@ -11,13 +11,17 @@ body {
   color: $gray;
 }
 
+.content {
+  margin-top: 7.5rem;
+  padding-bottom: 3rem;
+}
+
 h1, h2, h3, h4, h5 {
   color: $white;
   font-weight: normal;
 }
 
 p {
-  font-weight: 300;
   line-height: 26px;
 }
 
@@ -26,7 +30,6 @@ p {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 3rem;
 
   @media only screen and (min-width: 1200px) {
     width: 1170px;

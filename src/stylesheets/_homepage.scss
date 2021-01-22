@@ -1,43 +1,19 @@
 .homepage {
   display: flex;
+  height: calc(100vh - 170px);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 
   h2 {
     color: $blue;
   }
 
-  .profile {
-    &__img-wrapper {
-      background-image: url("../images/me.jpeg"); 
-      background-color: $dark-gray; 
-      height: calc(100vh - 71px); 
-      width: 50%;
-      background-position: center 30%;
-      background-repeat: no-repeat; 
-      background-size: cover; 
-      position: relative;
-  
-      @media only screen and (max-width: 768px) {
-        width: 100%;
-      }
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.1);
-      }
-    }
-  
-    &__info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 50%;
-    }
+  img {
+    width: 500px;
   }
 }
 
