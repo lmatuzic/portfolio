@@ -1,7 +1,8 @@
 import React from 'react'
+import NavbarToggle from '../components/NavbarToggle'
 import { NavLink } from "react-router-dom";
 
-function Navbar() {
+function Navbar({navbarStatus, setNavbarStatus}) {
   return (
     <nav className="navbar">
       <ul>
@@ -22,11 +23,10 @@ function Navbar() {
         </li>
       </ul>
 
-      <button className="navbar__toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <NavbarToggle 
+       navbarStatus={navbarStatus} 
+       setNavbarStatus={setNavbarStatus}
+      />
     </nav>
   )
 }
