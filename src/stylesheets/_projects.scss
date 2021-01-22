@@ -1,0 +1,64 @@
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  padding-bottom: 5em;
+  margin-top: 2rem;
+
+  @media only screen and (max-width: 992px) {
+    grid-template-columns: 1fr;
+  }
+  
+  .project {
+    border: 1px solid $black;
+    background-color: $black;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    padding: 2em;
+    position: relative;
+    transition: box-shadow 0.15s ease-out, color 0.15s ease-out;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+      color: $white;
+
+      .project__name {
+        color: $blue;
+      }
+
+      .icon-right {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .icon-right {
+      position: absolute;
+      right: 2rem;
+      color: $blue;
+      opacity: 0;
+      transform: translateX(-1rem);
+      transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+    }
+
+    div {
+      margin-bottom: 5px;
+      font-weight: 300;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__name {
+      margin-bottom: 1em;
+      transition: color 0.15s ease-out;
+    }
+
+    &__technologies {
+      span {
+        margin-right: 10px;
+      }
+    }
+  }
+}
