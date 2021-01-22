@@ -50,8 +50,12 @@
   &__toggle {
     display: none;
     cursor: pointer;
+    background-color: $black;
+    border: none;
+    outline: none;
 
-    div {
+    span {
+      display: block;
       width: 28px;
       height: 2px;
       background-color: $blue;

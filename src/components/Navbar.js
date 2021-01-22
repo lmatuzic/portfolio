@@ -22,11 +22,11 @@ function Navbar() {
         </li>
       </ul>
 
-      <div className="navbar__toggle">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <button className="navbar__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
   )
 }
