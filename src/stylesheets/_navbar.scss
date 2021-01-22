@@ -46,34 +46,4 @@
       display: none;
     }
   }
-
-  &__toggle {
-    display: none;
-    cursor: pointer;
-    background-color: $black;
-    border: none;
-    outline: none;
-
-    span {
-      display: block;
-      width: 28px;
-      height: 2px;
-      background-color: $blue;
-      margin: 6px 0;
-
-      &:first-child {
-        width: 14px;
-        margin-left: 14px;
-      }
-
-      &:last-child {
-        width: 14px;
-        margin-right: 14px;
-      }
-    }
-
-    @media only screen and (max-width: 992px) {
-      display: block;
-    }
-  }
 }
