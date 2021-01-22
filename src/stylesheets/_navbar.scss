@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
   background-color: $black;
   padding: 1.5em 5em;
   border-bottom: 1px solid rgba(255, 255, 255, .06);
@@ -9,37 +10,10 @@
     padding: 1.5em 1em;
   }
 
-  .left {
-    li {
-      a {
-        color: $gray;
-        transition: color 0.15s ease-out;
-
-        &:hover {
-          color: $white;
-        }
-      }
-    }
-  }
-
-  .right {
-    ul {
-      li {
-        a {
-          &:hover {
-            color: $blue;
-          }
-
-          &.active {
-            color: $blue;
-          }
-        }
-      }
-    }
-  }
 
   ul {
     display: flex;
+    align-items: center;
 
     li {
       list-style: none;
@@ -52,9 +26,50 @@
       a {
         text-decoration: none;
         color: $white;
-        font-weight: 700;
         transition: color 0.15s ease-out;
+
+        &:hover {
+          color: $blue;
+        }
+
+        &.active {
+          color: $blue;
+        }
+
+        &.home {
+          color: $white;
+        }
       }
+    }
+
+    @media only screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__toggle {
+    display: none;
+    cursor: pointer;
+
+    div {
+      width: 28px;
+      height: 2px;
+      background-color: $blue;
+      margin: 6px 0;
+
+      &:first-child {
+        width: 14px;
+        margin-left: 14px;
+      }
+
+      &:last-child {
+        width: 14px;
+        margin-right: 14px;
+      }
+    }
+
+    @media only screen and (max-width: 992px) {
+      display: block;
     }
   }
 }
