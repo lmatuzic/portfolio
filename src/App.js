@@ -6,7 +6,6 @@ import Navbar from './components/Navbar'
 //pages
 import Home from './pages/Home'
 import About from './pages/About'
-import Education from './pages/Education'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 
@@ -20,7 +19,6 @@ function App() {
       <Navbar />
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
-      <Route exact path="/education" component={Education} />
       <Route exact path="/projects" component={Projects} />
       <Route exact path="/contact" component={Contact} />
     </div>

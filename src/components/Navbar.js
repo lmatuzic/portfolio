@@ -19,10 +19,6 @@ function Navbar() {
           </li>
 
           <li>
-            <NavLink to="/education">Education</NavLink>
-          </li>
-
-          <li>
             <NavLink to="/projects">Projects</NavLink>
           </li>
 
