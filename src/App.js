@@ -19,13 +19,10 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar 
-        navbarStatus={navbarStatus} 
-        setNavbarStatus={setNavbarStatus} 
-      />
+      <Navbar navbarStatus={navbarStatus} setNavbarStatus={setNavbarStatus} />
 
       <main className="content">
-        <MobileNav navbarStatus={navbarStatus} />
+        <MobileNav navbarStatus={navbarStatus} setNavbarStatus={setNavbarStatus} />
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/projects" component={Projects} />
