@@ -23,7 +23,7 @@
       color: $white;
 
       .project__name {
-        color: $orange;
+        color: $blue;
       }
 
       .icon-right {
@@ -35,7 +35,7 @@
     .icon-right {
       position: absolute;
       right: 2rem;
-      color: $orange;
+      color: $blue;
       opacity: 0;
       transform: translateX(-1rem);
       transition: opacity 0.15s ease-out, transform 0.15s ease-out;
