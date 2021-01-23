@@ -1,27 +1,19 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import Project from '../components/Project'
 
-const Projects = () => {
-  const titleAnimation = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1 }
-  }
+//animations
+import { motion } from 'framer-motion'
+import { pageAnimation } from '../Animation'
 
+const Projects = () => {
   return (
-    <div className="container">
-      <motion.h2 
-          variants={ titleAnimation }
-          initial="hidden"
-          animate="show"
-        >
-        Projects
-      </motion.h2>
+    <motion.div className="container project__list" variants={pageAnimation} exit="exit" initial="hidden" animate="show">
+      <h2>Projects that I worked on</h2>
 
       <div className="projects">
         <Project />
       </div>
-    </div>
+    </motion.div>
   )
 }
 

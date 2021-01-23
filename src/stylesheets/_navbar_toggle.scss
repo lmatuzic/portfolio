@@ -4,7 +4,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  margin-right: 2rem;
+  margin-right: 1rem;
 
   span {
     display: block;
@@ -12,6 +12,7 @@
     height: 2px;
     background-color: $blue;
     margin: 6px 0;
+    transition: transform 0.3s ease-out;
 
     &:first-child {
       width: 14px;
@@ -26,5 +27,17 @@
 
   @media only screen and (max-width: 576px) {
     display: block;
+
+    &.active {
+      span {
+        &:first-child {
+          transform: translateX(-14px);
+        }
+
+        &:last-child {
+          transform: translateX(14px);
+        }
+      }
+    }
   }
 }

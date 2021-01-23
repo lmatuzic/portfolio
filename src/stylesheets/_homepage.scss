@@ -15,5 +15,11 @@
   img {
     width: 500px;
   }
+  
+  .profile {
+    &__info {
+      text-align: center;
+    }
+  }
 }
 
