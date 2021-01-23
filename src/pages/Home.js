@@ -2,7 +2,7 @@ import React from 'react'
 
 //animations
 import { motion } from 'framer-motion'
-import { pageAnimation } from '../Animation'
+import { pageAnimation, fadeIn } from '../Animation'
 
 function Home() {
   return (
@@ -10,7 +10,7 @@ function Home() {
       <div className="container">
         <div className="profile__info">
           <h1>Luka Matuzić</h1>
-          <h2>Web developer</h2>
+          <motion.h2 variants={fadeIn}>Web developer</motion.h2>
         </div>
       </div>
     </motion.div>
