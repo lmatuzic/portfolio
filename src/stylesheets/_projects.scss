@@ -5,7 +5,7 @@
   padding-bottom: 5em;
   margin-top: 2rem;
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
   
@@ -57,6 +57,13 @@
     &__technologies {
       span {
         margin-right: 10px;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .icon-right {
+        opacity: 1;
+        transform: translateX(0);
       }
     }
   }
