@@ -1,17 +1,19 @@
 import React from 'react'
-//import avatar from '../images/me.png'
+
+//animations
+import { motion } from 'framer-motion'
+import { pageAnimation } from '../Animation'
 
 function Home() {
   return (
-    <div className="homepage">
+    <motion.div className="homepage" variants={pageAnimation} exit="exit" initial="hidden" animate="show">
       <div className="container">
-        {/* <img src={avatar} alt="avatar"/> */}
         <div className="profile__info">
           <h1>Luka Matuzić</h1>
           <h2>Web developer</h2>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

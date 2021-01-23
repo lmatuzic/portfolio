@@ -3,6 +3,10 @@ import projects from '../projectData.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 
+//animations
+import { motion } from 'framer-motion'
+import {fadeInFromBottom} from '../Animation'
+
 function Project() {
   const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener, noreferrer');
@@ -16,18 +20,19 @@ function Project() {
       {
         projects.map((project) => { 
           return (
-            <div 
+            <motion.div 
               key={project.id} 
               className="project" 
               id={project.id} 
               onClick={(e) => project.link.length === 0 ? e.preventDefault() : openInNewTab(project.link)}
+              variants={fadeInFromBottom}
             >
               <h4 className="project__name">{project.name}</h4>
               <div className="project__description">{project.description}</div>
               <div className="project__role">{project.role}</div>
               <div className="project__technologies">{project.technologies}</div>
               {project.link.length === 0 ? '' : <FontAwesomeIcon className="icon icon-right" icon={faLongArrowAltRight} /> }
-            </div>
+            </motion.div>
           ) 
         })
       } 
