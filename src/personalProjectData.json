@@ -9,14 +9,6 @@
   },
   {
     "id": 2,
-    "name": "Todo app",
-    "description": "Application for organizing tasks with filter functionality",
-    "role": "Frontend web development",
-    "technologies": "HTML, SCSS, Javascript, React",
-    "link": "https://todo-react-kappa.vercel.app/"
-  },
-  {
-    "id": 3,
     "name": "Music library",
     "description": "Music library application",
     "role": "Frontend web development",
@@ -24,7 +16,7 @@
     "link": "https://react-music-library.vercel.app/"
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "Recipe editor",
     "description": "Recipe editor application",
     "role": "Frontend web development",
@@ -32,7 +24,7 @@
     "link": "https://recipe-editor.vercel.app/"
   },
   {
-    "id": 5,
+    "id": 4,
     "name": "Games app",
     "description": "Web app showing games from API with search functionality and Redux state management",
     "role": "Frontend web development",
