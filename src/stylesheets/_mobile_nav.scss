@@ -1,3 +1,13 @@
+.light {
+  .mobile__nav {
+    background-color: $blue;
+
+    a {
+      color: $white;
+    }
+  }
+}
+
 .mobile__nav {
   display: flex;
   justify-content: center;
@@ -8,14 +18,13 @@
   right: 0;
   left: 0;
   z-index: 2;
-  background-color: $gray;
+  text-align: center;
+  background-color: $light-gray;
   color: $black;
   transform: translateX(-100%);
-  opacity: 0;
-  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  transition: transform 0.3s ease;
 
   &.active {
-    opacity: 1;
     transform: translateX(0);
   }
 
@@ -34,8 +43,4 @@
     font-size: 2rem;
     font-weight: 700;
   }
-}
-
-.mobile__nav .active {
-  
 }

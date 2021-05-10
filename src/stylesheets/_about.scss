@@ -1,5 +1,9 @@
 .about {
-  margin-top: 3rem;
+  height: calc(100vh - 72px);
+
+  @media only screen and (max-width: 576px) {
+    height: auto;
+  }
   
   h2 {
     margin-bottom: 1rem;
@@ -37,6 +41,7 @@
     text-decoration: none;
     color: $blue;
     transition: color 0.15s ease-out;
+    
     &:hover {
       color: darken($color: $blue, $amount: 10%);
     }

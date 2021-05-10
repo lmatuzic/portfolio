@@ -1,3 +1,19 @@
+.light {
+  .contact {
+    .links {
+      a {
+        background-color: $baby-gray;
+        color: $dark-gray;
+        border: 1px solid $gray;
+
+        &:hover {
+          background-color: darken($color: $baby-gray, $amount: 2%);
+        }
+      }
+    }
+  }
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -15,6 +31,7 @@
       margin-right: 2rem;
       background-color: $black;
       padding: 1rem;
+      border: 1px solid transparent;
       border-radius: 4px;
       color: $gray;
       transition: color 0.15s ease-out, background-color 0.15s ease-out;

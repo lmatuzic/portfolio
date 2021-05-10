@@ -10,7 +10,7 @@ function Home() {
       <div className="container">
         <div className="profile__info">
           <h1>Luka Matuzić</h1>
-          <motion.h2 variants={fadeIn}>Web developer</motion.h2>
+          <motion.div variants={fadeIn}>Web developer</motion.div>
         </div>
       </div>
     </motion.div>

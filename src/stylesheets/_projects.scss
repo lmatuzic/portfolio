@@ -15,7 +15,7 @@
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
     padding: 2em;
     position: relative;
-    transition: box-shadow 0.15s ease-out, color 0.15s ease-out;
+    transition: box-shadow 0.15s ease, color 0.15s ease, background-color 0.15s ease;
 
     &:hover {
       cursor: pointer;
@@ -68,10 +68,3 @@
     }
   }
 }
-
-.project__list {
-  h2 {
-    margin-top: 3rem;
-  }
-}
-

@@ -28,9 +28,7 @@
     "name": "Games app",
     "description": "Web app showing games from API with search functionality and Redux state management",
     "role": "Frontend web development",
-    "technologies": "HTML, SCSS, Javascript, React",
+    "technologies": "HTML, SCSS, Javascript, React, Redux",
     "link": "https://github.com/lmatuzic/games-app"
   }
 ]
-
-

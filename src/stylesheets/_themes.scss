@@ -1,0 +1,49 @@
+.App {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+  &.dark {
+    background-color: $dark-gray;
+    color: $gray;
+
+    h1, h2, h3 {
+      color: $white;
+    }
+  }
+
+  &.light {
+    background-color: $white;
+    color: $dark-gray;
+
+    .navbar {
+      background-color: $baby-gray;
+    }
+
+    h1, h2, h3 {
+      color: $dark-gray;
+    }
+
+    a {
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: darken($color: $blue, $amount: 15%);
+      }
+    }
+
+    .project {
+      background-color: $baby-gray;
+      box-shadow: none;
+      border-color: $gray;
+
+      &:hover {
+        box-shadow: none;
+        color: $black;
+        background-color: darken($color: $baby-gray, $amount: 2%);
+      }
+
+      h4 {
+        color: $blue;
+      }
+    }
+  }
+}

@@ -6,24 +6,22 @@
   font-family: 'Nunito', sans-serif;
 }
 
-body {
-  background-color: $dark-gray;
-  color: $gray;
-}
-
 .content {
-  margin-top: 70px; // 70px = navbar height
-  padding-bottom: 3rem;
+ padding-top: 4.5rem;
+  padding-bottom: 5rem;
   overflow: hidden;
+  height: calc(100vh - 4.5rem);
 
-  @media only screen and (max-width: 576px) {
-    margin-top: 5.5rem;
+  @media only screen and (max-width: 1200px) {
+    padding-top: 7rem;
+    height: auto;
   }
 }
 
 h1, h2, h3, h4, h5 {
   color: $white;
   font-weight: normal;
+  transition: color 0.3s ease;
 }
 
 p {
@@ -44,6 +42,3 @@ p {
     width: auto;
   }
 }
-
-
-

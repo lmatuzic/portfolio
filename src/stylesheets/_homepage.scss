@@ -1,15 +1,11 @@
 .homepage {
   display: flex;
-  height: calc(100vh - 170px);
+  height: calc(100vh - 72px);
 
   .container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-  }
-
-  h2 {
-    color: $blue;
   }
 
   img {
@@ -19,6 +15,11 @@
   .profile {
     &__info {
       text-align: center;
+
+      & > div {
+        color: $blue;
+        font-size: 20px;
+      }
     }
   }
 }

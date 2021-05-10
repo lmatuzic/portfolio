@@ -2,9 +2,18 @@ import React from 'react'
 import NavbarToggle from '../components/NavbarToggle'
 import { NavLink } from "react-router-dom";
 
-function Navbar({navbarStatus, setNavbarStatus}) {
+function Navbar({navbarStatus, setNavbarStatus, theme, setTheme}) {
+  const changeTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark")
+  }
+
   return (
     <nav className="navbar">
+      <label className="switch">
+        <input type="checkbox" onClick={() => changeTheme()} />   
+        <div></div>
+      </label>
+
       <ul>
         <li>
           <NavLink to="/" className="home">Home</NavLink>

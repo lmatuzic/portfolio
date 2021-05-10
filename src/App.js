@@ -18,16 +18,21 @@ import { AnimatePresence } from 'framer-motion'
 import './stylesheets/application.scss'
 
 function App() {
+  const [theme, setTheme] = useState("dark");
   const [navbarStatus, setNavbarStatus] = useState(false);
   const location = useLocation();
 
   return (
-    <div className="App">
-      <Navbar navbarStatus={navbarStatus} setNavbarStatus={setNavbarStatus} />
+    <div className={`App ${theme}`} theme={theme}>
+      <Navbar 
+        navbarStatus={navbarStatus} 
+        setNavbarStatus={setNavbarStatus} 
+        theme={theme}
+        setTheme={setTheme}
+      />
 
       <main className="content">
         <MobileNav navbarStatus={navbarStatus} setNavbarStatus={setNavbarStatus} />
-
         <AnimatePresence exitBeforeEnter>
           <Switch location={location} key={location.pathname}>
             <Route exact path="/" component={Home} />
