@@ -1,3 +1,9 @@
+.project__list {
+  @extend %mt-nav;  
+  @extend %pt-3;  
+  @extend %pb-5;  
+}
+
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -41,16 +47,22 @@
       transition: opacity 0.15s ease-out, transform 0.15s ease-out;
     }
 
-    div {
-      margin-bottom: 5px;
+    &__name, 
+    &__description,
+    &__role {
+      margin-bottom: 6px;
+    }
 
+    & > div {
       &:last-child {
         margin-bottom: 0;
       }
     }
 
     &__name {
-      margin-bottom: 1em;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
       transition: color 0.15s ease-out;
     }
 

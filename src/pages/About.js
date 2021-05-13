@@ -6,8 +6,8 @@ import { fadeInFromBottom, pageAnimation } from '../Animation'
 
 function About() {
   return (
-    <div className="container">
-      <motion.div className="about" variants={pageAnimation} exit="exit" initial="hidden" animate="show">
+    <div className="container about">
+      <motion.div variants={pageAnimation} exit="exit" initial="hidden" animate="show">
         <motion.div className="personal" variants={fadeInFromBottom}>
           <h2>Personal</h2>
 

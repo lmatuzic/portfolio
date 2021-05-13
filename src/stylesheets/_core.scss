@@ -3,19 +3,18 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
 }
 
-.content {
- padding-top: 4.5rem;
-  padding-bottom: 5rem;
-  overflow: hidden;
-  height: calc(100vh - 4.5rem);
+html, body {
+  min-height: 100%;
+  min-height: 100vh;
+  overflow: auto;
+}
 
-  @media only screen and (max-width: 1200px) {
-    padding-top: 7rem;
-    height: auto;
-  }
+.content {
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5 {
@@ -29,8 +28,8 @@ p {
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
 

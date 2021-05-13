@@ -1,10 +1,8 @@
 .about {
-  height: calc(100vh - 72px);
+  @extend %mt-nav;  
+  @extend %pt-3; 
+  @extend %pb-5;  
 
-  @media only screen and (max-width: 576px) {
-    height: auto;
-  }
-  
   h2 {
     margin-bottom: 1rem;
     position: relative;

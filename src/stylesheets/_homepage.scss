@@ -1,11 +1,16 @@
 .homepage {
+  @extend %height-without-nav;
   display: flex;
-  height: calc(100vh - 72px);
 
   .container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+
+  .content {
+    margin: 0;
+    padding: 0;
   }
 
   img {

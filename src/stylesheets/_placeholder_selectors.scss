@@ -1,0 +1,23 @@
+%mt-nav {
+  margin-top: 71px;
+
+  @media only screen and (max-width: 576px) {
+    margin-top: 63px;
+  }
+}
+
+%pt-3 {
+  padding-top: 3rem;
+}
+
+%pb-5 {
+  padding-bottom: 5rem;
+}
+
+%height-without-nav {
+  height: calc(100vh - 71px);
+
+  @media only screen and (max-width: 576px) {
+    height: calc(100vh - 63px);
+  }
+}
